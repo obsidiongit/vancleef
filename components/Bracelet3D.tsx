@@ -190,7 +190,7 @@ export default function Bracelet3D() {
   return (
     <Canvas
       dpr={[1, 2]}
-      camera={{ position: [0, 0.5, 8.1], fov: 42 }}
+      camera={{ position: [0, 1.1, 8.1], fov: 42 }}
       gl={{ antialias: true, alpha: true }}
       style={{ position: 'absolute', inset: 0 }}
     >
@@ -221,6 +221,7 @@ export default function Bracelet3D() {
         blur={2.6}
         far={4}
         color="#8f1f53"
+        frames={1}
       />
 
       {/* custom jewelry-studio lighting — no external HDR fetch */}
@@ -257,7 +258,9 @@ export default function Bracelet3D() {
         enableZoom={false}
         enablePan={false}
         minPolarAngle={Math.PI / 3}
-        maxPolarAngle={(Math.PI * 2) / 3}
+        /* stop at eye level so the camera never dips below the shadow plane,
+           where its underside flickers as a dark box (worst on mobile) */
+        maxPolarAngle={Math.PI / 2}
       />
     </Canvas>
   )

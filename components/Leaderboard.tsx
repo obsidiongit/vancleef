@@ -142,7 +142,7 @@ export default function Leaderboard({
 
       {pack.length > 0 && (
         <>
-          <p className="pack-label">The chasing pack</p>
+          <p className="pack-label">In the running</p>
           <div className="pack">
             {pack.map((c, i) => (
               <PackCard key={c.name} c={c} i={i} goal={goal} />

@@ -45,6 +45,6 @@ Open http://localhost:3000.
 | `data/competition.ts` | **Scores, names, ticker — the file you edit** |
 | `lib/standings.ts` | Sorting, ranking, tie-breaks, winner detection |
 | `components/Bracelet3D.tsx` | The procedural 3D bracelet (Three.js) |
-| `components/Leaderboard.tsx` | Lanes, clover progress pips, chasing pack |
+| `components/Leaderboard.tsx` | Lanes, clover progress pips, "in the running" list |
 | `components/WinnerTakeover.tsx` | Full-screen celebration when someone hits 10 |
 | `app/globals.css` | The whole jewel-box look — colors, animations |
