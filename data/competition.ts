@@ -35,11 +35,11 @@ export const COMPETITORS: Competitor[] = [
   { name: 'Aaron Sandefur', deals: 0 },
   { name: 'Abbie H.', deals: 0 },
   { name: 'Abdess Zarouali', deals: 0 },
-  { name: 'Alexis Bizon', deals: 0 },
+  { name: 'Alexis Bizon', deals: 1, lastDealAt: '2026-07-17' },
   { name: 'Andy N.', deals: 0 },
   { name: 'Bella L.', deals: 0 },
   { name: 'Carolina Dominguez', deals: 0 },
-  { name: 'Chaley Selsor', deals: 1, lastDealAt: '2026-07-05' },
+  { name: 'Chaley Selsor', deals: 2, lastDealAt: '2026-07-17' },
   { name: 'Chrisantha Hudson', deals: 0 },
   { name: 'Elizabeth Ortega Cruz', deals: 1, lastDealAt: '2026-07-05' },
   { name: 'Emily Martinsen', deals: 0 },
@@ -49,7 +49,7 @@ export const COMPETITORS: Competitor[] = [
   { name: 'Johanna Rubin', deals: 0 },
   { name: 'Julia Golub', deals: 0 },
   { name: 'Kristen Barnes', deals: 0 },
-  { name: 'Lexi Aguilar', deals: 0 },
+  { name: 'Lexi Aguilar', deals: 2, lastDealAt: '2026-07-17' },
   { name: 'Loveda Muniz', deals: 0 },
   { name: 'Mackenzie Dragon', deals: 0 },
   { name: 'Maged Tamer', deals: 0 },
@@ -73,6 +73,9 @@ export const COMPETITORS: Competitor[] = [
 
 /** Ticker feed — newest first. Keep each line short and fun. */
 export const RECENT_DEALS: string[] = [
+  'Chaley Selsor closes deal #2 — tied for the lead at two!',
+  'Lexi Aguilar jumps to two deals — neck and neck at the top!',
+  'Alexis Bizon gets on the board with deal #1!',
   'Elizabeth Ortega Cruz gets on the board — three-way tie at the top!',
   'Russel Spence joins the race with deal #1',
   'Chaley Selsor draws first blood — deal #1 and the early lead!',
